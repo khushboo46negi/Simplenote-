@@ -1,19 +1,26 @@
+// NoteList.styles.js
 import styled from 'styled-components';
 
 export const NoteListWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem; /* Space between boxes */
+  height: 200px;
+  width: 1400px; /* Adjust the width as needed */
+  margin-right: auto;
 `;
 
 export const NoteItem = styled.div`
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 0.5rem;
+  flex: 0 9 calc(23% - 1rem); /* Four boxes per row with space */
+  border: 0.7px solid #ccc;
+  padding: 2rem;
   border-radius: 4px;
+  box-sizing: border-box; 
+  box-shadow: 0px 0px 8px
 `;
 
 export const NoteTitle = styled.h3`
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.9rem 0;
 `;
 
 export const NoteContent = styled.p`
@@ -22,7 +29,7 @@ export const NoteContent = styled.p`
 
 export const NoteTimestamp = styled.small`
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   color: #777;
 `;
 

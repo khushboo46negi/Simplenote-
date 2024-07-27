@@ -4,6 +4,7 @@ import NoteList from './components/NoteList';
 import Pagination from './components/Pagination';
 import Search from './components/Search';
 import { getNotes, saveNotes } from './utils/localStorage';
+import "./App.css"
 
 const App = () => {
    const [notes, setNotes] = useState([]);
@@ -46,10 +47,10 @@ const App = () => {
    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
    return (
-       <div>
+       <div className='container'>
            <h1>Simple Note Taking App</h1>
            <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-           <NoteForm addNote={addNote} />
+           <NoteForm addNote={addNote} /><br/>
            <NoteList notes={currentNotes} deleteNote={deleteNote} editNote={editNote} />
            <Pagination totalNotes={notes.length} notesPerPage={notesPerPage} paginate={paginate} />
        </div>

@@ -1,9 +1,16 @@
+// NoteForm.styles.js
 import styled from 'styled-components';
 
 export const FormWrapper = styled.form`
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  height:200px;
+  width: 400px; /* Adjust the width as needed */
+  margin-left: 550px; /* Aligns the form to the right */
+  margin-right: auto;
+  border: 5px solid #ccc; /* Border color and thickness */
+  padding: 0.5rem; /* Space between the border and the content */
+  border-radius: 10px; /* Optional: rounded corners */
 `;
 
 export const Input = styled.input`
@@ -11,6 +18,8 @@ export const Input = styled.input`
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 100%;
+  height:30px
 `;
 
 export const Textarea = styled.textarea`
@@ -18,6 +27,8 @@ export const Textarea = styled.textarea`
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 100%;
+  height: 100px
 `;
 
 export const Button = styled.button`
@@ -27,6 +38,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 20%; 
 
   &:hover {
     background-color: #0056b3;
