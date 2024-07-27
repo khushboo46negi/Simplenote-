@@ -13,4 +13,4 @@ A simple note-taking application built with React.js, featuring CRUD operations,
 1. Clone the repository:
    ```bash
    git clone git@github.com:khushboo46negi/Simplenote-.git
-   cd /Simplenote
+
